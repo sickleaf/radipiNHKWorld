@@ -1,0 +1,51 @@
+begin
+button = power
+prog = irexec
+config = vcgencmd display_power 0
+end
+
+
+begin
+button = play
+prog = irexec
+config = sh /home/radipi/lircScript/startBrowser.sh
+end
+
+begin
+button = up
+prog = irexec
+config = sh /home/radipi/lircScript/onekey.sh "Up"
+end
+
+begin
+button = down
+prog = irexec
+config = sh /home/radipi/lircScript/onekey.sh "Down"
+end
+
+begin
+button = left
+prog = irexec
+config = sh /home/radipi/lircScript/onekey.sh "ctrl+minus"
+end
+
+
+begin
+button = right
+prog = irexec
+config = sh /home/radipi/lircScript/onekey.sh "ctrl+plus"
+end
+
+
+begin
+button = stop
+prog = irexec
+config = sh /home/radipi/lircScript/quitBrowser.sh
+end
+
+begin
+button = dubbing
+prog = irexec
+config = sh /home/radipi/lircScript/refresh.sh
+end
+
